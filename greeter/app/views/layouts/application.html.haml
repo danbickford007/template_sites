@@ -25,29 +25,22 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand(href="#") Greeter
+          %a.brand(href="#") Company Name
           .container.nav-collapse
             %ul.nav
-              %li= link_to "Link 1", "/path1"
-              %li= link_to "Link 2", "/path2"
-              %li= link_to "Link 3", "/path3"
+              %li= link_to "Admin", admin_index_path
+              %li= link_to "About", "/path2"
+              %li= link_to "Help", "/path3"
+    #container
+      .container-fluid
 
-    .container-fluid
-
-      .row-fluid
-        .span3
-          .well.sidebar-nav
-            %ul.nav.nav-list
-              %li.nav-header Sidebar
-              %li= link_to "Link 1", "/path1"
-              %li= link_to "Link 2", "/path2"
-              %li= link_to "Link 3", "/path3"
-        .span9
-          = bootstrap_flash
-          = yield
-    
-      %footer
-        %p &copy; Company 2013
+        .row-fluid
+          .span9
+            = bootstrap_flash
+            = yield
+      
+        %footer
+          %p &copy; Company 2013
     /
       Javascripts
       \==================================================

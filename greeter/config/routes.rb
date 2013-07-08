@@ -1,5 +1,17 @@
 Greeter::Application.routes.draw do
+  get "admin/new"
+  get "admin/create"
+  get "admin/update"
+  get "admin/edit"
+  get "admin/destroy"
+  get "admin/index"
+  get "admin/show"
   root :to=>"users#index"
+
+  scope :path=>'users', :controller=>'users' do
+    post 'login'
+  end
+
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.

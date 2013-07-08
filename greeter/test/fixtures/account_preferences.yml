@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  all_access: false
+  account_id: 1
+
+two:
+  all_access: false
+  account_id: 1

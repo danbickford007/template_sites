@@ -1,8 +1,11 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-
-  # GET /users
-  # GET /users.json
+  
+  def login
+    flash[:success] = 'You have been logged in.'
+    redirect_to users_path
+  end
+  
   def index
     @users = User.all
   end
